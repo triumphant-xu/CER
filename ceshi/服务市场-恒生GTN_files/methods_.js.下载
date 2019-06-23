@@ -1,0 +1,386 @@
+require(["domReady!","avalon","jquery","common/common","jquery.cookie"], function(dom,avalon,$,common) {
+	var model=avalon.define({
+	        $id:"common",
+	        appkey:"",
+	        environment:"",
+	        url:"",
+	        signature:"",
+	        recharge:"",
+	        datacheckServices:"",
+	        user_roles_code:"",
+	        epayOrder: "",
+	        pluginInfo:[],
+			search_content:'',
+			isGtn:2,
+			consoleUrlList:'',
+	        closePop:function(id){//关闭弹出框
+	            $(".popup_bg").hide();
+	            $(".black_shield").hide();
+	            if(id.match("#")!=null){
+	         	   location.reload();
+	            }
+	         },
+	         /*
+	          * 该方法用于：AppView.vm/serviceInfo.vm/sandboxAppView.vm/sandboxServiceInfo.vm
+	          * */
+	        showOff:function(){
+				$('#off,.black_shield').show();
+			},
+			/* 上线，下线功能
+			 * environment：1：沙箱应用  2：生产应用
+			 * 该方法用于：AppView.vm/serviceInfo.vm/sandboxAppView.vm/sandboxServiceInfo.vm
+			 * */
+			onoffline:function(app_key,clientStatus,environment){
+				if(app_key!=""){
+					common.ajax({
+						url : "application/updateAppStatus.json" ,
+						dataType : "json" ,
+						type:"post",
+						async:false,
+						data:{
+							appKey:app_key,
+							environment:environment,
+							clientStatus:clientStatus
+						},
+						callback: function(data){
+							model.closePop("");
+							window.location.reload();
+						}
+					});
+				}
+			},
+			/*删除应用_显示删除弹框
+			 * 该方法用于：AppView.vm/serviceInfo.vm/sandboxAppView.vm/sandboxServiceInfo.vm
+			 * */
+			delApp:function(app_key,environment){
+				$("#delPop").show();
+				$(".black_overlay").show();
+				model.appkey = app_key;
+				model.environment = environment;
+			},
+			/*删除应用_real
+			 * 该方法用于：AppView.vm/serviceInfo.vm/sandboxAppView.vm/sandboxServiceInfo.vm
+			 * */
+			confirmDelBt:function(){
+				var environment = model.environment;
+				if(environment == "1"){
+					model.url="/console/test_app.html";
+				}
+				if(environment == "2"){
+					model.url="/console/prd_app.html";
+				}
+				if(model.appkey!=""){
+					common.ajax({
+						url : "application/delApp.json" ,
+						dataType : "json" ,
+						type:"post",
+						async:false,
+						data:{
+							appKey:model.appkey,
+							environment:model.environment
+						},
+						callback: function(data){
+							model.closePop("");
+							window.location.href=model.url;
+						}
+					});
+				}
+			},
+			/*已上传附件下载
+			 * 该方法用于：AppCreate.vm/AppView.vm
+			 * */
+			download:function(){
+				var client_key = $(this).prop('id');
+				var param = {
+						client_key:client_key,
+						environment_type:2
+				}
+				common.ajax({
+	    			url : "image/judgeExist.json" ,
+	    	        dataType : "json" ,
+	    	        type:"post",
+	    	        async:true,
+	    	        data:param,
+	    	        callback: function(data){
+	    	    	        window.location.href="/cloud/open/image/download.json?environment_type=2&client_key="+client_key;
+	    	        },
+	    	        failure:function(r){
+	    	        	common.alertNodePop(r.error_info);
+	    	        }
+	    		});
+			},
+			/*
+			 * 显示弹窗方法
+			 * 该方法用于：Popup.vm
+			 * */
+			//弹框
+		    bounced:function(id){
+		    	$('#'+id).show();
+		    	$('#fade').show();
+		    },
+		    //关闭弹框
+		    close:function(id){
+		    	$('#'+id).hide();
+		    	$('#fade').hide();
+		    },
+		    getPlugnPage:function(){
+		    	$.ajax({
+					url : "/cloud/open/plugin/getPluginInfo.json" ,
+			        dataType : "json" ,
+			        type:"post",
+			        async:true,
+			        success: function(data){
+			        	model.pluginInfo = data.data.pluginInfo;
+			        	if(model.pluginInfo != null){
+			        		model.signature = data.data.signature;
+			        		model.recharge = data.data.recharge;
+			        		model.datacheckServices = data.data.datacheckServices;
+			        		model.user_roles_code = data.data.user_roles_code;
+			        		model.epayOrder = data.data.epayOrder;
+			        		if(model.signature == "false" && model.recharge == "false" && model.datacheckServices=="false"){
+			        			model.pluginInfo = [];
+			        		}
+			        		
+			        	}
+			        },
+			        error:function(r){
+			        	tips(r.error_info);
+			        }
+				});
+		    },
+			goLogin:function(){
+				$.cookie("_u_", window.location, { path: '/', expires: 10 });
+				var userBehavior = window.location.href;
+				$.ajax({
+					url : "/cloud/open/user/setUserBehavior.json",
+					dataType : "json" ,
+					type:"post",
+					async:true,
+					data:{
+						userBehavior:userBehavior
+					},
+					success: function(data){
+						window.location.href ="/login/login.html";
+					},
+					error:function(r){
+						tips(r.error_info);
+					}
+				});
+			},
+			getOtherConsoleUrl:function(){
+				$.ajax({
+					url : "/cloud/open/user/getConsoleUrl.json",
+					dataType : "json" ,
+					type:"post",
+					async:true,
+					success: function(data){
+						model.consoleUrlList = data.data;
+					},
+					error:function(r){
+						tips(r.error_info);
+					}
+				});
+			},
+			//切换产品控台
+			changeConsole:function(e){
+				//$(".header-tab-pannel").css("max-height","500px");
+				$(".header-tab-pannel").slideDown(150);
+				e.preventDefault();
+				e.stopPropagation();
+			},
+			//选怎切换控台
+			goToOtherConsole:function(type,e){
+				//debugger;
+				$(".header-tab-left .header-icon div").text('');
+				if(type!=5){
+					$('#gtnConsole').hide();
+				}else{
+					$('#gtnConsole').show();
+					window.location.href='/smzj/easyQuery/consoleIndex.html';
+				}
+				if(type==1){
+					window.location.href='/console/accountInfo.html';
+				}
+				if(type==2){
+					//$(".header-tab-left .header-icon div").removeClass("kyc-big-logo htl-big-logo smzj-big-logo").addClass("xj-big-logo");
+					//$("#xjHeader").show();
+					//$("#consoleSearch").hide();
+					//$(".header-tab-pannel").slideUp(150);
+					//$("#iframeWrapper").show();
+					//var src = model.consoleUrlList.whales;
+					//$("#outerUrl").attr('src',src);
+					window.location.href='/bot.html';
+				}else if(type==3){
+					$(".header-tab-left .header-icon div").removeClass("xj-big-logo htl-big-logo smzj-big-logo").addClass("kyc-big-logo");
+					$("#xjHeader").hide();
+					$("#consoleSearch").show();
+					$(".header-tab-pannel").slideUp(150);
+				}else if(type==4){
+                    //$(".header-tab-left .header-icon div").removeClass("xj-big-logo kyc-big-logo smzj-big-logo").addClass("htl-big-logo");
+                    //$("#xjHeader").hide();
+                    //$("#consoleSearch").show();
+                    //$(".header-tab-pannel").slideUp(150);
+                    //$("#iframeWrapper").show();
+                    //var src = model.consoleUrlList.contractChain;
+                    //$("#outerUrl").attr('src',src);
+					window.location.href='/chain.html';
+				}else if(type==5){
+                    $(".header-tab-left .header-icon div").removeClass("xj-big-logo htl-big-logo kyc-big-logo").addClass("smzj-big-logo");
+                    $("#xjHeader").hide();
+                    $("#consoleSearch").show();
+                    $(".header-tab-pannel").slideUp(150);
+				} else{
+					$(".header-tab-left .header-icon div").removeClass("kyc-big-logo htl-big-logo smzj-big-logo").removeClass("xj-big-logo");
+					$(".header-tab-left .header-icon div").text($(this).text());
+					$("#xjHeader").hide();
+					$("#consoleSearch").show();
+					$(".header-tab-pannel").slideUp(150);
+					if(type==4){
+						$("#iframeWrapper").show();
+						var src = model.consoleUrlList.contractChain;
+						//$("#outerUrl").attr('src',src);
+					}
+				}
+				if(type==2||type==3||type==4){
+					model.isGtn = 2;
+				}else{
+					model.isGtn = 1;
+				}
+				e.preventDefault();
+				e.stopPropagation();
+			},
+			whaleClick:function(type){
+				$(this).addClass("active").siblings("li").removeClass("active");
+				var src = model.consoleUrlList.whales.split("#")[0]+'#/'+type;
+				$("#outerUrl").attr('src',src);
+			},
+			/**new version of console
+			 * search Animation function
+			 * add by wyy 2018-09-07
+			 * **/
+			consoleSearch:function(){
+				if($(".search-item").hasClass("search-active")){
+					$("#header-search-input").animate({width:"0"},function(){
+						$(".search-item").removeClass("search-active");
+					})
+				}else{
+					$(".search-item").addClass("search-active");
+					$("#header-search-input").animate({width:"319px"},function(){
+					})
+				}
+
+			},
+			submitQuery: function(e){
+				e=e||event;
+				var keycode = (e.keyCode ? e.keyCode : e.which);
+				common.search_content=$.trim($("#header-search-input").val());
+				if(keycode == '13'&&common.search_content!=""){
+					//跳转页面
+					window.location.href="/result.html?content=" + common.search_content;
+				}
+				if(keycode == '13'&&common.search_content==""){
+					//debugger;
+					//var val = $(".searchBar-show .search-wrapper input").attr("placeholder");
+					var val = '';
+					window.location.href="/result.html?content=" + val;
+				}
+			},
+
+			
+	})
+	
+	/**
+	 * 
+	 * 多页面公用的方法：控台左侧导航栏收起，展开的功能
+	 * 
+	 * */
+	$(".sidebar .nav-sidebar").each(function(){
+		var li = $(this).find("li").first();
+		li.click(function(){
+			if($(this).parent().children().length==1){
+				$(li).addClass("sidebar-title-active");
+				//return false;
+			}else{
+				var ul = $(this).parent();
+				var ul_switch = ul.hasClass("active");
+				var i = $(this).find("i");
+				if(ul_switch){
+					ul.removeClass("active");
+					i.removeClass("parent-down").addClass("parent-up");
+					i.siblings("i")
+				}else{
+					ul.addClass("active").siblings(".nav").removeClass("active");
+					$(".sidebar .nav-sidebar").each(function(){
+						if(!$(this).hasClass("active")){
+							$(this).children("li:first-child").find("i").removeClass("parent-down").addClass("parent-up");
+						}else{
+							$(this).children("li:first-child").find("i").removeClass("parent-up").addClass("parent-down");
+						}
+					})
+					//ul.addClass("active");
+					//i.removeClass("parent-up").addClass("parent-down");
+				}
+			}
+
+		})
+	})
+	$(function(){
+		model.getOtherConsoleUrl();
+		$("body").click(function(e){
+			$(".header-tab-pannel").slideUp(150);
+			//e.preventDefault();
+			e.stopPropagation();
+		})
+		if(window.location.href.match('/smzj') == null && window.location.href.match('/console/privateEquity/private_card') == null&&window.location.href.match('/bot.html')==null&&window.location.href.match('/chain.html')==null){
+            $(".header-tab-left .header-icon div").text('产品与服务');
+		}else{
+			$(".header-tab-left .header-icon div").text('');
+			if(window.location.href.match('/bot.html')==null&&window.location.href.match('/chain.html')==null){
+				$(".header-tab-left .header-icon div").removeClass("xj-big-logo,htl-big-logo,kyc-big-logo").addClass("smzj-big-logo");
+				$("#xjHeader").hide();
+				$("#consoleSearch").show();
+			}
+		}
+
+		//if(!model.isGtn){
+			var height = document.documentElement.clientHeight //- $(".navbar-fixed-top").height();
+			$(".console-iframe-wrapper").css("height",height);
+		//}
+	})
+	model.getPlugnPage();
+	avalon.scan();
+})
+
+
+/**
+ * 文件上传
+ * id和arg可以拼成当前点击的input type="file" 的元素的id
+ * arg是前半部分，id是后半部分
+ * id参数是本地存放文件路径的元素的id
+ * */
+function upload(id,arg){
+	var value =  $(arg+id).val();
+	$("#"+id).val(value);
+}
+/**
+ *提示信息弹窗
+ */
+function tips(message,time){
+    time=time==undefined?1000:time;
+    $.blockUI({
+        message: '<div class="con-pop"><div class="inner"><div class="details"><p style="text-align: center">'+message+'</p></div></div></div>',
+        timeout:  time,
+        overlayCSS : {
+            opacity : 0.15,
+            cursor:"default"
+        },
+        css : {
+            left:'43%',
+            position : 'fixed',
+            border:"0px",
+            backgroundColor:"none",
+            cursor:"auto",
+            textAlign:"left"
+        }
+    });
+}

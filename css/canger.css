@@ -1,0 +1,106 @@
+
+#user-retain-table td{
+	font-size: 13px;
+	border: 6px solid #fff;
+	text-align: center;
+	background-color: #f7f7fa;
+}
+#canger-card-block ul{
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+#canger-card-block{
+	border: 6px solid #fff;
+}
+.padding-4{
+	padding: 4px;
+},
+#echart-select-list li{
+	display: block;
+	background-color: #003399;
+	border-top:1px solid rgb(243,241,241);
+}
+#user-table thead
+  td,  th{
+  	 background-color:#FFFFFF;
+  }
+  
+#point-item-chart{
+	position:absolute;
+    width: 600px;
+    height: 365px;
+    border: solid 1px #009EFB;
+    background:#fff;
+    border-radius: 5px;
+    z-index: 10;
+}
+#point-item-chart-body{
+	width: 100%;
+	height: 335px;
+	margin-top: 20px;
+}
+#point-item-chart-close {
+	left: 0;
+	color: #014C8C;
+	font-size:18px;
+	width: 20px;
+	height: 20px;
+	line-height: 15px; 
+	text-align: center;
+} 
+#point-item-chart-close:hover{
+	background-color: red;
+	color: #FFFFFF;
+}
+
+
+#creat-win,#edit-win,#win{
+	background-color: #FFFFFF;
+	 border: solid 2px #009EFB;
+	 right: 0%;
+	 height: 70%;
+	 position:absolute;
+	 overflow-y: auto;
+	 overflow-x: hidden;
+	 z-index:9999;
+}
+#creat-win li,,#edit-win li{
+	display: inline-block;
+	margin-top: 2px;
+	margin-left: 10px;
+	width: 100%;
+}
+.huo .qie, .editWin .qie {
+	width: 100%;
+	display: inline-block;
+	border:solid 1px #009EFB;
+	border-right-width:0px;
+	padding-bottom: 10px;
+}
+#creat-win select,#edit-win select{
+	padding: 0px 2px;
+	height: calc(1.75rem + 2px);width: calc(6.25rem + 2px)
+}
+#creat-win input,#edit-win input{
+	padding: 0px 2px;
+	height: calc(1.75rem + 2px);
+	width: calc(5rem + 2px)
+}
+.as{
+	width: 100%;
+	height: 100%;
+	border:solid 1px #009EFB;
+}
+.asd{
+	width: 50%;
+	height: 50%;
+	float: left;
+}
+.btn-normal{
+	border:solid 1px #009EFB;
+}
+.asd li{
+	
+	width: 100%;
+}

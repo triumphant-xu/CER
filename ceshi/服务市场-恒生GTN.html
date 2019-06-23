@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://www.hs.net/GtnMarket.html -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><avalon ms-skip="1" class="avalonHide">X<style id="avalonStyle">.avalonHide{ display: none!important }</style><div class="function-btn" id="login" ms-if="login" style="display: none;">
+		<a class="username" target="_blank" href="https://www.hs.net/console/services.html">{{username}}</a>
+		<a class="register" id="cas_logout_url">退出</a>
+	    <a class="manage" href="https://www.hs.net/console/services.html" "="">管理中心</a>
+	</div><div class="footer-left f12" ms-if="item.combo_type==&#39;0&#39;&amp;&amp;item.price!=&#39;-1.00&#39;"><span>￥{{item.price}}</span>/{{item.invoke_times}}次</div><div class="footer-left f12" ms-if="item.combo_type==&#39;1&#39;&amp;&amp;item.price!=&#39;-1.00&#39;">￥<span>{{item.price}}</span>/{{item.used_length}}天</div><div class="footer-left f16" ms-if="item.price==&#39;-1.00&#39;||item.price==&#39;&#39;">联系商务报价</div><div class="footer-left f12" ms-if="item.combo_type==&#39;0&#39;&amp;&amp;item.price!=&#39;-1.00&#39;"><span>￥{{item.price}}</span>/{{item.invoke_times}}次</div><div class="footer-left f12" ms-if="item.combo_type==&#39;0&#39;&amp;&amp;item.price!=&#39;-1.00&#39;"><span>￥{{item.price}}</span>/{{item.invoke_times}}次</div><div class="footer-left f12" ms-if="item.combo_type==&#39;1&#39;&amp;&amp;item.price!=&#39;-1.00&#39;">￥<span>{{item.price}}</span>/{{item.used_length}}天</div><div class="footer-left f12" ms-if="item.combo_type==&#39;0&#39;&amp;&amp;item.price!=&#39;-1.00&#39;"><span>￥{{item.price}}</span>/{{item.invoke_times}}次</div><div class="footer-left f12" ms-if="item.combo_type==&#39;1&#39;&amp;&amp;item.price!=&#39;-1.00&#39;">￥<span>{{item.price}}</span>/{{item.used_length}}天</div><div class="footer-left f16" ms-if="item.price==&#39;-1.00&#39;||item.price==&#39;&#39;">联系商务报价</div><div class="footer-left f12" ms-if="item.combo_type==&#39;0&#39;&amp;&amp;item.price!=&#39;-1.00&#39;"><span>￥{{item.price}}</span>/{{item.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;1&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.used_length}}天</div><div class="service-describe f16" ms-if="item1.price==&#39;-1.00&#39;||item1.price==&#39;&#39;">联系商务报价</div><div class="service-describe f16" ms-if="item1.combo_type==&#39;0&#39;&amp;&amp;item1.price!=&#39;-1.00&#39; &amp;&amp;item1.price!=&#39;&#39;">￥{{item1.price}}/{{item1.invoke_times}}次</div></avalon>
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="content-type" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+		<link rel="icon" href="https://www.hs.net/open/images/openplat/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="https://www.hs.net/open/images/openplat/favicon.ico" type="image/x-icon">
+	<link href="./服务市场-恒生GTN_files/openplat.css" rel="stylesheet">
+	<script src="./服务市场-恒生GTN_files/hm.js.下载"></script><script src="./服务市场-恒生GTN_files/jquery.js.下载"></script>
+	<script>
+		if(navigator.appName == "Microsoft Internet Explorer"&&parseInt(navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE",""))<=9){
+            window.location.href="/not_support.html"
+        }
+	</script>    <title>服务市场-恒生GTN</title>
+    <script src="./服务市场-恒生GTN_files/require.js.下载"></script>
+    <script src="./服务市场-恒生GTN_files/app.js.下载"></script>
+    <link href="./服务市场-恒生GTN_files/cloudMarketIndex.css" rel="stylesheet">
+    <script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+    <style>
+    	.banner{
+    		width:1200px;
+    		margin:0 auto;
+    	}
+    </style>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="domReady" src="./服务市场-恒生GTN_files/domReady.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="common/common" src="./服务市场-恒生GTN_files/common.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.cookie" src="./服务市场-恒生GTN_files/jquery.cookie.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="marketHeader" src="./服务市场-恒生GTN_files/marketHeader.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="commona" src="./服务市场-恒生GTN_files/methods_.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="avalon" src="./服务市场-恒生GTN_files/avalon.shim.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./服务市场-恒生GTN_files/jquery.js(1).下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.blockUI" src="./服务市场-恒生GTN_files/jquery.blockUI.min.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.actual" src="./服务市场-恒生GTN_files/jquery.actual.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="apiMenu" src="./服务市场-恒生GTN_files/apiMenu.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="pager" src="./服务市场-恒生GTN_files/avalon.pager.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="SuperSlide211" src="./服务市场-恒生GTN_files/jquery.SuperSlide.2.1.1.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="text" src="./服务市场-恒生GTN_files/text.js.下载"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="css" src="./服务市场-恒生GTN_files/css.js.下载"></script><link type="text/css" rel="stylesheet" href="./服务市场-恒生GTN_files/avalon.pager.css"></head>
+<body class="" avalonctrl="cloudMarketIndex">
+	
+	<!-- search模块 -->
+	<div class="search clearfix" avalonctrl="marketHeader">
+	<h3><a href="https://www.hs.net/"><img src="./服务市场-恒生GTN_files/cloudmarket_logo.png" alt="云市场"></a></h3>
+    <div class="search_box" avalonctrl="apiMenu">
+    	<input type="text" class="search_input" placeholder="在此输入您想要的服务" id="searchInput">
+    						<a class="search_button">搜索</a>
+    </div>
+    <a class="quick-order" href="https://www.hs.net/cloud/open/console/shortcut.html#/chooseService" target="_blank">快捷下单</a>
+	<a class="customized_demand" href="https://ito.hs.net/itopc/issuer/issue_proj_first.htm" target="_blank">发布定制需求</a>
+	<div class="function-btn" id="unlogin">
+		<a class="login">登录</a>
+		<a class="register">注册</a>
+	    <a class="manage" href="https://www.hs.net/console/services.html" "="">管理中心</a>
+	</div>
+	<!--ms-if-->
+	<script src="./服务市场-恒生GTN_files/cloudMarket_service.jspx"></script><div class="search-tips">
+		<p>
+			<!--<span><a href="/service/305.html">人脸识别</a></span>-->
+			<span><a href="https://www.hs.net/service/309.html">因子选股</a></span>
+			<span><a href="https://www.hs.net/service/306.html">云虚拟交易所</a></span>
+			<span><a href="https://www.hs.net/service/315.html">私募综合业务管理系统</a></span>
+		</p>
+</div>
+
+</div>	
+	<div class="services-classify">
+		<p>
+			<span>服务市场分类</span>
+		</p>
+		<div class="long-panel clearfix">
+			<ul>
+				<li class="dark"><a href="https://www.hs.net/market.html" target="_blank">全部服务</a></li>
+				<!--repeat10518788906580499529530171051923--><li class="clearfix light">
+					<a target="_blank" data="10" href="https://www.hs.net/market.html?classify_id=10">行情</a>
+					<!--repeat81494760879673028371839051903585--><a target="_blank" href="https://www.hs.net/service/437.html">涨停分析(API)</a><!--repeat81494760879673028371839051903585--><a target="_blank" href="https://www.hs.net/service/179.html">自选股组件(H5)</a><!--repeat81494760879673028371839051903585--><a target="_blank" href="https://www.hs.net/service/11.html">行情资金流(API)</a><!--repeat81494760879673028371839051903585--><a target="_blank" href="https://www.hs.net/service/264.html">行情增值数据组件(H5)</a><!--repeat81494760879673028371839051903585--><a target="_blank" href="https://www.hs.net/service/288.html">沪深Level2账号-恒生PC客户端</a><!--repeat81494760879673028371839051903585--><a target="_blank" href="https://www.hs.net/service/44.html">行情策略(API)</a><!--repeat81494760879673028371839051903585:end-->
+					<div class="hover-panel">
+						<div class="inner-content clearfix">
+							<h3>行情</h3>
+							<a target="_blank" class="more" href="https://www.hs.net/market.html?classify_id=10">更多</a>
+							<!--repeat2853788283414269126767494170058--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat2853788283414269126767494170058--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat2853788283414269126767494170058--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat2853788283414269126767494170058--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat2853788283414269126767494170058--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat2853788283414269126767494170058--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat2853788283414269126767494170058:end-->
+						</div>
+					</div>
+				</li><!--repeat10518788906580499529530171051923--><li class="clearfix dark">
+					<a target="_blank" data="26" href="https://www.hs.net/market.html?classify_id=26">资讯</a>
+					<!--repeat498593892394552123269239937045527--><a target="_blank" href="https://www.hs.net/service/322.html">量化因子库</a><!--repeat498593892394552123269239937045527--><a target="_blank" href="https://www.hs.net/service/252.html">A股历史行情</a><!--repeat498593892394552123269239937045527--><a target="_blank" href="https://www.hs.net/service/235.html">小梵智讯</a><!--repeat498593892394552123269239937045527--><a target="_blank" href="https://www.hs.net/service/234.html">智能推荐</a><!--repeat498593892394552123269239937045527--><a target="_blank" href="https://www.hs.net/service/321.html">基金风格数据库</a><!--repeat498593892394552123269239937045527--><a target="_blank" href="https://www.hs.net/service/258.html">A股财务报表</a><!--repeat498593892394552123269239937045527:end-->
+					<div class="hover-panel">
+						<div class="inner-content clearfix">
+							<h3>资讯</h3>
+							<a target="_blank" class="more" href="https://www.hs.net/market.html?classify_id=26">更多</a>
+							<!--repeat040162826767120359617457713064281--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat040162826767120359617457713064281--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat040162826767120359617457713064281--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat040162826767120359617457713064281--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat040162826767120359617457713064281--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat040162826767120359617457713064281--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat040162826767120359617457713064281:end-->
+						</div>
+					</div>
+				</li><!--repeat10518788906580499529530171051923--><li class="clearfix light">
+					<a target="_blank" data="50" href="https://www.hs.net/market.html?classify_id=50">投资管理</a>
+					<!--repeat00416544704689658658050937937584568--><a target="_blank" href="https://www.hs.net/service/584.html">来牛专业脱水报告</a><!--repeat00416544704689658658050937937584568--><a target="_blank" href="https://www.hs.net/service/307.html">PBOX专业投资交易服务系统</a><!--repeat00416544704689658658050937937584568--><a target="_blank" href="https://www.hs.net/service/402.html">i私募私募端</a><!--repeat00416544704689658658050937937584568--><a target="_blank" href="https://www.hs.net/service/577.html">UFX接口</a><!--repeat00416544704689658658050937937584568--><a target="_blank" href="https://www.hs.net/service/526.html">赢家策略</a><!--repeat00416544704689658658050937937584568--><a target="_blank" href="https://www.hs.net/service/531.html">鲸选课堂</a><!--repeat00416544704689658658050937937584568:end-->
+					<div class="hover-panel">
+						<div class="inner-content clearfix">
+							<h3>投资管理</h3>
+							<a target="_blank" class="more" href="https://www.hs.net/market.html?classify_id=50">更多</a>
+							<!--repeat112469105395615057232099246812091--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat112469105395615057232099246812091--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat112469105395615057232099246812091--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat112469105395615057232099246812091--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat112469105395615057232099246812091--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat112469105395615057232099246812091--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat112469105395615057232099246812091:end-->
+						</div>
+					</div>
+				</li><!--repeat10518788906580499529530171051923--><li class="clearfix dark">
+					<a target="_blank" data="17" href="https://www.hs.net/market.html?classify_id=17">智能AI</a>
+					<!--repeat86553278608397395054980425909619--><a target="_blank" href="https://www.hs.net/service/454.html">iWin智能运营</a><!--repeat86553278608397395054980425909619--><a target="_blank" href="https://www.hs.net/service/181.html">相似K线（API）</a><!--repeat86553278608397395054980425909619--><a target="_blank" href="https://www.hs.net/service/452.html">晓鲸桌面型个人版实体机器人</a><!--repeat86553278608397395054980425909619--><a target="_blank" href="https://www.hs.net/service/309.html">因子选股组件(H5)</a><!--repeat86553278608397395054980425909619--><a target="_blank" href="https://www.hs.net/service/182.html">筹码分布(API)</a><!--repeat86553278608397395054980425909619--><a target="_blank" href="https://www.hs.net/service/160.html">量化策略组件(H5)</a><!--repeat86553278608397395054980425909619:end-->
+					<div class="hover-panel">
+						<div class="inner-content clearfix">
+							<h3>智能AI</h3>
+							<a target="_blank" class="more" href="https://www.hs.net/market.html?classify_id=17">更多</a>
+							<!--repeat652647916142523805017260004101676--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat652647916142523805017260004101676--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat652647916142523805017260004101676--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat652647916142523805017260004101676--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat652647916142523805017260004101676--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat652647916142523805017260004101676--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat652647916142523805017260004101676:end-->
+						</div>
+					</div>
+				</li><!--repeat10518788906580499529530171051923--><li class="clearfix light">
+					<a target="_blank" data="49" href="https://www.hs.net/market.html?classify_id=49">模拟仿真</a>
+					<!--repeat77076712685254297888987831038272--><a target="_blank" href="https://www.hs.net/service/198.html">模拟炒股大赛</a><!--repeat77076712685254297888987831038272--><a target="_blank" href="https://www.hs.net/service/306.html">金融模拟平台</a><!--repeat77076712685254297888987831038272--><a target="_blank" href="https://www.hs.net/service/294.html">模拟交易排名统计</a><!--repeat77076712685254297888987831038272--><a target="_blank" href="https://www.hs.net/service/293.html">期货模拟交易</a><!--repeat77076712685254297888987831038272--><a target="_blank" href="https://www.hs.net/service/292.html">港股模拟交易</a><!--repeat77076712685254297888987831038272--><a target="_blank" href="https://www.hs.net/service/291.html">A股模拟交易</a><!--repeat77076712685254297888987831038272:end-->
+					<div class="hover-panel">
+						<div class="inner-content clearfix">
+							<h3>模拟仿真</h3>
+							<a target="_blank" class="more" href="https://www.hs.net/market.html?classify_id=49">更多</a>
+							<!--repeat36289226341768019649928453533008--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat36289226341768019649928453533008--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat36289226341768019649928453533008--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat36289226341768019649928453533008--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat36289226341768019649928453533008--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat36289226341768019649928453533008--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat36289226341768019649928453533008:end-->
+						</div>
+					</div>
+				</li><!--repeat10518788906580499529530171051923--><li class="clearfix dark">
+					<a target="_blank" data="14" href="https://www.hs.net/market.html?classify_id=14">数据核查</a>
+					<!--repeat224694822202754056944117716193705--><a target="_blank" href="https://www.hs.net/service/372.html">私募年报审计服务</a><!--repeat224694822202754056944117716193705--><a target="_blank" href="https://www.hs.net/service/459.html">地方金融监管服务</a><!--repeat224694822202754056944117716193705--><a target="_blank" href="https://www.hs.net/service/114.html">身份证OCR识别</a><!--repeat224694822202754056944117716193705--><a target="_blank" href="https://www.hs.net/service/460.html">投资人适当性管理平台</a><!--repeat224694822202754056944117716193705--><a target="_blank" href="https://www.hs.net/service/380.html">智能KYC</a><!--repeat224694822202754056944117716193705--><a target="_blank" href="https://www.hs.net/service/746.html">法规云服务</a><!--repeat224694822202754056944117716193705:end-->
+					<div class="hover-panel">
+						<div class="inner-content clearfix">
+							<h3>数据核查</h3>
+							<a target="_blank" class="more" href="https://www.hs.net/market.html?classify_id=14">更多</a>
+							<!--repeat58291940013744259350167292115577--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat58291940013744259350167292115577--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat58291940013744259350167292115577--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat58291940013744259350167292115577--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat58291940013744259350167292115577--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat58291940013744259350167292115577--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat58291940013744259350167292115577:end-->
+						</div>
+					</div>
+				</li><!--repeat10518788906580499529530171051923--><li class="clearfix light">
+					<a target="_blank" data="48" href="https://www.hs.net/market.html?classify_id=48">金融游戏</a>
+					<!--repeat77760947852609454724931595495978--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat77760947852609454724931595495978--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat77760947852609454724931595495978--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat77760947852609454724931595495978--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat77760947852609454724931595495978--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat77760947852609454724931595495978--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat77760947852609454724931595495978:end-->
+					<div class="hover-panel">
+						<div class="inner-content clearfix">
+							<h3>金融游戏</h3>
+							<a target="_blank" class="more" href="https://www.hs.net/market.html?classify_id=48">更多</a>
+							<!--repeat565048018426316509681201261800743--><a target="_blank" href="https://www.hs.net/service/190.html">实盘猜涨跌</a><!--repeat565048018426316509681201261800743--><a target="_blank" href="https://www.hs.net/service/299.html">恒生小营加</a><!--repeat565048018426316509681201261800743--><a target="_blank" href="https://www.hs.net/service/287.html">股游记</a><!--repeat565048018426316509681201261800743--><a target="_blank" href="https://www.hs.net/service/184.html">一指点金</a><!--repeat565048018426316509681201261800743--><a target="_blank" href="https://www.hs.net/service/428.html">晓鲸决战吧</a><!--repeat565048018426316509681201261800743--><a target="_blank" href="https://www.hs.net/service/278.html">猜涨跌游戏组件</a><!--repeat565048018426316509681201261800743:end-->
+						</div>
+					</div>
+				</li><!--repeat10518788906580499529530171051923:end-->
+				<!--<li class="dark">云栖专场</li>
+				<li class="light">基础金融</li>
+				<li class="dark">智慧金融</li>
+				<li class="light">互联网金融</li>
+				<li class="dark">开发工具</li>
+				<li class="light">运营支持</li>  -->
+			</ul>
+		</div>
+	</div>
+	<!-- 轮播图模块:引用CMS -->
+    	<!-- 加载中 -->
+    <div class="loading" id="loading" style="height: 320px; display: none;">
+	    <p style="padding-top:120px;"><img src="./服务市场-恒生GTN_files/load_c.gif"></p>
+	</div>
+	<div class="cloudMarket_banner" style="display: block;" id="banner">
+		<script src="./服务市场-恒生GTN_files/cloudMarket_banner.jspx"></script><style>
+/*上线之后这段要去掉 begin*/
+.fullSlide .hd{margin-left:-117px;}
+/*上线之后这段要去掉 over*/
+</style>
+<div class="banner" id="banner">
+    <div class="banner-slider">
+        <div class="fullSlide" style="height:320px;">
+              <div class="bd">
+                    <ul>
+                          <li style="height: 320px; background: url(&quot;https://blog.hscloud.cn:443/u/cms/www/201711/2419252845fi.png&quot;) center 0px / auto 320px no-repeat; display: list-item;" class="cover"> 
+                             <a target="_blank" style="height:440px;" href="https://www.hscloud.cn/GtnMarket.html" onclick="_hmt.push([&#39;_trackEvent&#39;, &#39;首页banner图&#39;, &#39;点击&#39;, &#39;首页banner图按钮&#39;])"></a>
+                          </li>
+	            </ul>
+                 </div>
+	    <div class="hd" style="display: none; margin-left: -22px;">
+	        <ul>
+		           <li></li>
+	        </ul>
+	    </div>
+        </div>
+    </div>
+</div>
+<script>
+//$(".bd ul li:eq(0)").empty();
+//$(".bd ul li:eq(1)").empty();
+//$(".bd ul li:eq(2)").empty();
+//$(".bd ul li:eq(3)").empty();
+//$(".bd ul li:eq(4)").empty();
+//$(".bd ul li:eq(5)").empty();
+</script>
+<script>
+//设备检测  移动端返回true，pc端返回false
+function detectmob1() {  
+                if( navigator.userAgent.match(/Android/i)  
+                || navigator.userAgent.match(/webOS/i)  
+                || navigator.userAgent.match(/iPhone/i)  
+                || navigator.userAgent.match(/iPad/i)  
+                || navigator.userAgent.match(/iPod/i)  
+                || navigator.userAgent.match(/BlackBerry/i)  
+                || navigator.userAgent.match(/Windows Phone/i)  
+                ){  
+                   //移动端
+                    $(".bd ul li:first a").attr("href","https://open.hscloud.cn/creativeCompetition/activePageMobile.html");
+                }  
+                else {  
+                    //PC端
+                    $(".bd ul li:first a").attr("href","https://open.hscloud.cn/creativeCompetition/activePage.html");
+                }  
+            } 
+</script>
+
+    </div>
+	<!--<div class="banner" style="height:320px;width:100%;background-color:#1b60a9;">-->
+	
+	<div class="selected-wrapper">
+		<div class="inner-box">
+			<h4>精选服务</h4>
+			<div class="selected-content">
+				<!--repeat293737607126489779017410977511--><div class="selected-item">
+					<span class="left-top">K线</span>
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201708251048120003.png" code="/api/201801241228190003.png">
+						<p class="service-name" title="相似K线（API）">相似K线（API）</p>
+					</div>
+					<div class="footer cearfix">
+						<div class="footer-left f16">联系商务报价</div>
+						<!--ms-if-->
+						<!--ms-if-->
+						<div class="footer-right"><a target="_blank" href="https://www.hs.net/service/181.html">立即抢购</a></div>
+					</div>
+				</div><!--repeat293737607126489779017410977511--><div class="selected-item">
+					<span class="left-top">量化</span>
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201707191408310045.png" code="/api/201707180051570023.png">
+						<p class="service-name" title="量化策略组件(H5)">量化策略组件(H5)</p>
+					</div>
+					<div class="footer cearfix">
+						<!--ms-if-->
+						<!--ms-if-->
+						<div class="footer-left f12">￥<span>0.10</span>/15天</div>
+						<div class="footer-right"><a target="_blank" href="https://www.hs.net/service/160.html">立即抢购</a></div>
+					</div>
+				</div><!--repeat293737607126489779017410977511--><div class="selected-item">
+					<span class="left-top">晓鲸AI</span>
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201802081046460001.png" code="/api/">
+						<p class="service-name" title="晓鲸百问（标准版）">晓鲸百问（标准版）</p>
+					</div>
+					<div class="footer cearfix">
+						<div class="footer-left f16">联系商务报价</div>
+						<!--ms-if-->
+						<!--ms-if-->
+						<div class="footer-right"><a target="_blank" href="https://www.hs.net/service/363.html">立即抢购</a></div>
+					</div>
+				</div><!--repeat293737607126489779017410977511--><div class="selected-item">
+					<span class="left-top">复盘</span>
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201708280851250043.png" code="/api/201709221724250001.jpg">
+						<p class="service-name" title="每日复盘">每日复盘</p>
+					</div>
+					<div class="footer cearfix">
+						<div class="footer-left f16">联系商务报价</div>
+						<!--ms-if-->
+						<!--ms-if-->
+						<div class="footer-right"><a target="_blank" href="https://www.hs.net/service/163.html">立即抢购</a></div>
+					</div>
+				</div><!--repeat293737607126489779017410977511--><div class="selected-item">
+					<span class="left-top">专项服务</span>
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201903071439440001.png" code="/api/">
+						<p class="service-name" title="私募门户合规建站">私募门户合规建站</p>
+					</div>
+					<div class="footer cearfix">
+						<!--ms-if-->
+						<!--ms-if-->
+						<div class="footer-left f12">￥<span>3999.00</span>/365天</div>
+						<div class="footer-right"><a target="_blank" href="https://www.hs.net/service/700.html">立即抢购</a></div>
+					</div>
+				</div><!--repeat293737607126489779017410977511:end-->
+			</div>
+		</div>
+	</div>
+	<div class="base-wrapper">
+		<!--repeat5885055305974443051404450132871204--><div class="inner-box">
+			<h4>行情 
+				<a target="_blank" href="https://www.hs.net/market.html?classify_id=10"><span>更多&gt;</span></a>
+			</h4>
+			<!--repeat0873681791788136818395039516588652--><a target="_blank" href="https://www.hs.net/service/437.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201803251742590007.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="涨停分析(API)">涨停分析(API)</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat448407308037590103557124277823842--><span>涨停原因</span><!--repeat448407308037590103557124277823842--><span>涨停分析</span><!--repeat448407308037590103557124277823842--><span>复盘</span><!--repeat448407308037590103557124277823842--><span>连续涨跌停</span><!--repeat448407308037590103557124277823842:end-->
+					</p>
+				</div>
+			</a><!--repeat0873681791788136818395039516588652--><a target="_blank" href="https://www.hs.net/service/179.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201708251346140011.png" code="/api/201708211710210022.jpg">
+						
+					</div>
+					<div class="service-name" title="自选股组件(H5)">自选股组件(H5)</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat529936183819163410468072379071147--><span>行情</span><!--repeat529936183819163410468072379071147:end-->
+					</p>
+				</div>
+			</a><!--repeat0873681791788136818395039516588652--><a target="_blank" href="https://www.hs.net/service/11.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201707191122420023.png" code="/api/201707191122480024.png">
+						
+					</div>
+					<div class="service-name" title="行情资金流(API)">行情资金流(API)</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat71618184602116469905577264096113--><span>行情</span><!--repeat71618184602116469905577264096113--><span>资讯</span><!--repeat71618184602116469905577264096113--><span>股市行情</span><!--repeat71618184602116469905577264096113--><span>私募数据</span><!--repeat71618184602116469905577264096113:end-->
+					</p>
+				</div>
+			</a><!--repeat0873681791788136818395039516588652--><a target="_blank" href="https://www.hs.net/service/264.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201710111148070019.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="行情增值数据组件(H5)">行情增值数据组件(H5)</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat11602704135740967510284971300578--><span>组件</span><!--repeat11602704135740967510284971300578--><span>市场强弱</span><!--repeat11602704135740967510284971300578--><span>龙虎榜</span><!--repeat11602704135740967510284971300578--><span>股东增减持</span><!--repeat11602704135740967510284971300578--><span>业绩预告</span><!--repeat11602704135740967510284971300578--><span>大宗交易</span><!--repeat11602704135740967510284971300578--><span>融资融券</span><!--repeat11602704135740967510284971300578:end-->
+					</p>
+				</div>
+			</a><!--repeat0873681791788136818395039516588652--><a target="_blank" href="https://www.hs.net/service/288.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201710300935170060.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="沪深Level2账号-恒生PC客户端">沪深Level2账号-恒生PC客户端</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥360.00/365天</div>
+					<p class="tag">
+						<!--repeat0965782804803143640939198807171984--><span>投资赢家</span><!--repeat0965782804803143640939198807171984--><span>level2</span><!--repeat0965782804803143640939198807171984--><span>账号</span><!--repeat0965782804803143640939198807171984--><span>最新</span><!--repeat0965782804803143640939198807171984--><span>PC客户端</span><!--repeat0965782804803143640939198807171984:end-->
+					</p>
+				</div>
+			</a><!--repeat0873681791788136818395039516588652--><a target="_blank" href="https://www.hs.net/service/44.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201707191357000036.png" code="/api/201707191357050037.png">
+						
+					</div>
+					<div class="service-name" title="行情策略(API)">行情策略(API)</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat0195925654419106816694393685322617--><span>行情</span><!--repeat0195925654419106816694393685322617--><span>股市行情</span><!--repeat0195925654419106816694393685322617:end-->
+					</p>
+				</div>
+			</a><!--repeat0873681791788136818395039516588652:end-->
+		</div><!--repeat5885055305974443051404450132871204--><div class="inner-box">
+			<h4>资讯 
+				<a target="_blank" href="https://www.hs.net/market.html?classify_id=26"><span>更多&gt;</span></a>
+			</h4>
+			<!--repeat95550381794855319886299298277204--><a target="_blank" href="https://www.hs.net/service/322.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201807041333530059.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="量化因子库">量化因子库</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥0.00/10天</div>
+					<p class="tag">
+						<!--repeat88292527001974927068748953128694--><span>聚源</span><!--repeat88292527001974927068748953128694--><span>量化</span><!--repeat88292527001974927068748953128694--><span>API</span><!--repeat88292527001974927068748953128694--><span>行情资讯</span><!--repeat88292527001974927068748953128694--><span>精选推荐</span><!--repeat88292527001974927068748953128694:end-->
+					</p>
+				</div>
+			</a><!--repeat95550381794855319886299298277204--><a target="_blank" href="https://www.hs.net/service/252.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201807031447030005.png" code="/api/201807031447090006.png">
+						
+					</div>
+					<div class="service-name" title="A股历史行情">A股历史行情</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥0.00/10天</div>
+					<p class="tag">
+						<!--repeat4156546712964841529991136879901714--><span>聚源</span><!--repeat4156546712964841529991136879901714--><span>A股</span><!--repeat4156546712964841529991136879901714--><span>API</span><!--repeat4156546712964841529991136879901714--><span>行情资讯</span><!--repeat4156546712964841529991136879901714:end-->
+					</p>
+				</div>
+			</a><!--repeat95550381794855319886299298277204--><a target="_blank" href="https://www.hs.net/service/235.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201709181924400046.png" code="/api/201712121428480058.png">
+						
+					</div>
+					<div class="service-name" title="小梵智讯">小梵智讯</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat02968719068132836217296970697186--><span>小梵智讯</span><!--repeat02968719068132836217296970697186--><span>H5组件</span><!--repeat02968719068132836217296970697186--><span>智能</span><!--repeat02968719068132836217296970697186--><span>智敬未来</span><!--repeat02968719068132836217296970697186--><span>聚源数据</span><!--repeat02968719068132836217296970697186:end-->
+					</p>
+				</div>
+			</a><!--repeat95550381794855319886299298277204--><a target="_blank" href="https://www.hs.net/service/234.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201709181935570047.png" code="/api/201712121425060057.png">
+						
+					</div>
+					<div class="service-name" title="智能推荐">智能推荐</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat719912103593939126328023373433274--><span>智能推荐</span><!--repeat719912103593939126328023373433274--><span>H5组件</span><!--repeat719912103593939126328023373433274--><span>智敬未来</span><!--repeat719912103593939126328023373433274--><span>新年特惠</span><!--repeat719912103593939126328023373433274--><span>聚源数据</span><!--repeat719912103593939126328023373433274:end-->
+					</p>
+				</div>
+			</a><!--repeat95550381794855319886299298277204--><a target="_blank" href="https://www.hs.net/service/321.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201807041020340050.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="基金风格数据库">基金风格数据库</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥0.00/10天</div>
+					<p class="tag">
+						<!--repeat82987548646382497575864204270668--><span>聚源</span><!--repeat82987548646382497575864204270668--><span>基金</span><!--repeat82987548646382497575864204270668--><span>特色</span><!--repeat82987548646382497575864204270668--><span>API</span><!--repeat82987548646382497575864204270668--><span>行情资讯</span><!--repeat82987548646382497575864204270668:end-->
+					</p>
+				</div>
+			</a><!--repeat95550381794855319886299298277204--><a target="_blank" href="https://www.hs.net/service/258.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201807031452120007.png" code="/api/201807031452160008.png">
+						
+					</div>
+					<div class="service-name" title="A股财务报表">A股财务报表</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥0.00/10天</div>
+					<p class="tag">
+						<!--repeat74440051714682093946394099885093--><span>聚源</span><!--repeat74440051714682093946394099885093--><span>A股</span><!--repeat74440051714682093946394099885093--><span>API</span><!--repeat74440051714682093946394099885093--><span>推荐</span><!--repeat74440051714682093946394099885093--><span>聚源数据</span><!--repeat74440051714682093946394099885093:end-->
+					</p>
+				</div>
+			</a><!--repeat95550381794855319886299298277204:end-->
+		</div><!--repeat5885055305974443051404450132871204--><div class="inner-box">
+			<h4>投资管理 
+				<a target="_blank" href="https://www.hs.net/market.html?classify_id=50"><span>更多&gt;</span></a>
+			</h4>
+			<!--repeat60240259426929345090093471710024--><a target="_blank" href="https://www.hs.net/service/584.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201810291000450058.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="来牛专业脱水报告">来牛专业脱水报告</div>
+					<!--ms-if-->
+					<div class="service-describe f16">￥9.00/1次</div>
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat0732831104641720223445112075749264--><span>投资策略</span><!--repeat0732831104641720223445112075749264--><span>脱水研报</span><!--repeat0732831104641720223445112075749264--><span>数据</span><!--repeat0732831104641720223445112075749264:end-->
+					</p>
+				</div>
+			</a><!--repeat60240259426929345090093471710024--><a target="_blank" href="https://www.hs.net/service/307.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201711171534450019.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="PBOX专业投资交易服务系统">PBOX专业投资交易服务系统</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat72261217847336215224573870053735--><span>投资交易</span><!--repeat72261217847336215224573870053735:end-->
+					</p>
+				</div>
+			</a><!--repeat60240259426929345090093471710024--><a target="_blank" href="https://www.hs.net/service/402.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201803152331430061.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="i私募私募端">i私募私募端</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥0.00/365天</div>
+					<p class="tag">
+						<!--repeat722177388327268407778152798487503--><span>i私募</span><!--repeat722177388327268407778152798487503--><span>聚源数据</span><!--repeat722177388327268407778152798487503:end-->
+					</p>
+				</div>
+			</a><!--repeat60240259426929345090093471710024--><a target="_blank" href="https://www.hs.net/service/577.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201810151322130001.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="UFX接口">UFX接口</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat6556892588921457364162528027685--><span>期货UFX</span><!--repeat6556892588921457364162528027685--><span>股票期权UFX</span><!--repeat6556892588921457364162528027685--><span>周边接入</span><!--repeat6556892588921457364162528027685:end-->
+					</p>
+				</div>
+			</a><!--repeat60240259426929345090093471710024--><a target="_blank" href="https://www.hs.net/service/526.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201809031800330007.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="赢家策略">赢家策略</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat49484557220288956005729816988767--><span>策略</span><!--repeat49484557220288956005729816988767--><span>智能</span><!--repeat49484557220288956005729816988767--><span>算法</span><!--repeat49484557220288956005729816988767:end-->
+					</p>
+				</div>
+			</a><!--repeat60240259426929345090093471710024--><a target="_blank" href="https://www.hs.net/service/531.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201809061713490003.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="鲸选课堂">鲸选课堂</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥0.00/30天</div>
+					<p class="tag">
+						<!--repeat17196668855577713526299302652856--><span>鲸选课堂</span><!--repeat17196668855577713526299302652856:end-->
+					</p>
+				</div>
+			</a><!--repeat60240259426929345090093471710024:end-->
+		</div><!--repeat5885055305974443051404450132871204--><div class="inner-box">
+			<h4>智能AI 
+				<a target="_blank" href="https://www.hs.net/market.html?classify_id=17"><span>更多&gt;</span></a>
+			</h4>
+			<!--repeat64223611291671257229459572766797--><a target="_blank" href="https://www.hs.net/service/454.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201805141523340019.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="iWin智能运营">iWin智能运营</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat502924627259435423406831737125344--><span>iWin</span><!--repeat502924627259435423406831737125344--><span>智能</span><!--repeat502924627259435423406831737125344--><span>运营</span><!--repeat502924627259435423406831737125344--><span>营销</span><!--repeat502924627259435423406831737125344--><span>推荐</span><!--repeat502924627259435423406831737125344:end-->
+					</p>
+				</div>
+			</a><!--repeat64223611291671257229459572766797--><a target="_blank" href="https://www.hs.net/service/181.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201708251048120003.png" code="/api/201801241228190003.png">
+						
+					</div>
+					<div class="service-name" title="相似K线（API）">相似K线（API）</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat84413264570456936156054215040356--><span>K线</span><!--repeat84413264570456936156054215040356--><span>智敬未来</span><!--repeat84413264570456936156054215040356--><span>热门</span><!--repeat84413264570456936156054215040356--><span>API特辑</span><!--repeat84413264570456936156054215040356--><span>精选服务</span><!--repeat84413264570456936156054215040356:end-->
+					</p>
+				</div>
+			</a><!--repeat64223611291671257229459572766797--><a target="_blank" href="https://www.hs.net/service/452.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201805090900480010.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="晓鲸桌面型个人版实体机器人">晓鲸桌面型个人版实体机器人</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat71590648221823226423381307409264--><span>晓鲸</span><!--repeat71590648221823226423381307409264--><span>投资</span><!--repeat71590648221823226423381307409264--><span>央视同款</span><!--repeat71590648221823226423381307409264--><span>机器人</span><!--repeat71590648221823226423381307409264:end-->
+					</p>
+				</div>
+			</a><!--repeat64223611291671257229459572766797--><a target="_blank" href="https://www.hs.net/service/309.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201711201517330050.png" code="/api/">
+						
+					</div>
+					<div class="service-name" title="因子选股组件(H5)">因子选股组件(H5)</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat079837883092814597531842369663149--><span>选股器</span><!--repeat079837883092814597531842369663149--><span>H5组件</span><!--repeat079837883092814597531842369663149--><span>形态选股</span><!--repeat079837883092814597531842369663149--><span>技术面选股</span><!--repeat079837883092814597531842369663149--><span>回测</span><!--repeat079837883092814597531842369663149--><span>H5组件特辑</span><!--repeat079837883092814597531842369663149--><span>行情资讯</span><!--repeat079837883092814597531842369663149--><span>精选推荐</span><!--repeat079837883092814597531842369663149:end-->
+					</p>
+				</div>
+			</a><!--repeat64223611291671257229459572766797--><a target="_blank" href="https://www.hs.net/service/182.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201708260821440001.png" code="/api/201801241239540013.png">
+						
+					</div>
+					<div class="service-name" title="筹码分布(API)">筹码分布(API)</div>
+					<div class="service-describe f16">联系商务报价</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<p class="tag">
+						<!--repeat50784587397830185966817924433698--><span>投资利器</span><!--repeat50784587397830185966817924433698--><span>筹码</span><!--repeat50784587397830185966817924433698--><span>H5组件特辑</span><!--repeat50784587397830185966817924433698:end-->
+					</p>
+				</div>
+			</a><!--repeat64223611291671257229459572766797--><a target="_blank" href="https://www.hs.net/service/160.html">
+				<div class="base-item">
+					<div class="service-info">
+						<img src="./服务市场-恒生GTN_files/201707191408310045.png" code="/api/201707180051570023.png">
+						
+					</div>
+					<div class="service-name" title="量化策略组件(H5)">量化策略组件(H5)</div>
+					<!--ms-if-->
+					<!--ms-if-->
+					<div class="service-describe f16">￥0.10/15天</div>
+					<p class="tag">
+						<!--repeat202573944083605184942310489289081--><span>量化</span><!--repeat202573944083605184942310489289081--><span>策略</span><!--repeat202573944083605184942310489289081--><span>精选服务</span><!--repeat202573944083605184942310489289081:end-->
+					</p>
+				</div>
+			</a><!--repeat64223611291671257229459572766797:end-->
+		</div><!--repeat5885055305974443051404450132871204:end-->
+	</div>
+	<!-- 悬浮条模块：客服+返回顶部 -->
+    <style>
+.popUp-layer{border:2px solid #cfe9ff;background:#fff;}
+.popUp-layer .close{display: block;position: absolute;width: 20px;height: 20px;right: 16px;top: 10px;background: url(/open/images/close.png) no-repeat;text-indent: -9999px;cursor: pointer;z-index: 99;}
+.popUp-layer-wrap{position: relative;width: 100%;height: 100%;}
+.popUp-layer-content{position: absolute;width: 100%;height: 100%;top: 0;color: #3f3f3f;box-shadow: 0 0 10px rgba(4,0,0,.3);}
+.popUp-layer-content .ui-btn{float:left;width:176px;height:36px;line-height:36px;text-align: center;font-size: 18px;}
+.btn-blue{background:#60ace8;}
+.btn-radius{border-radius: 25px;}
+.popUp-layer-yjfk{ width: 592px; position: fixed; left:50%; top:50%; margin-left:-298px; margin-top:-205px;padding: 0;height: 445px;}
+.popUp-layer-yjfk input{width: 299px;height: 38px;margin-left: 30px;padding: 0 4px;border: 1px solid #dcdcdc;color: #000;font-size: 14px;font-family: "微软雅黑";}
+.popUp-layer-yjfk .title{ margin:16px 0  26px 30px; padding: 0;display: inline-block;width: auto;font-size:18px;text-align:left;}
+.popUp-layer-yjfk textarea{ width: 522px; height: 146px; margin: 0 0 10px 30px; padding: 6px 4px; border: 1px solid #dcdcdc; resize: none; color: #000; font-size: 14px; font-family: "微软雅黑";overflow-y: auto;}
+.popUp-layer-yjfk input{ width: 299px; height: 38px; margin-left: 30px; padding: 0 4px; border: 1px solid #dcdcdc; color: #000; font-size: 14px; font-family: "微软雅黑";}
+.popUp-layer-yjfk textarea::-webkit-input-placeholder, .popUp-layer-yjfk input::-webkit-input-placeholder { /* WebKit browsers */color: #aaa;}
+.popUp-layer-yjfk textarea:-moz-placeholder, .popUp-layer-yjfk input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color: #aaa;}
+.popUp-layer-yjfk textarea::-moz-placeholder, .popUp-layer-yjfk input::-moz-placeholder { /* Mozilla Firefox 19+ */color: #aaa;}
+.popUp-layer-yjfk textarea:-ms-input-placeholder, .popUp-layer-yjfk input:-ms-input-placeholder { /* Internet Explorer 10+ */color: #aaa;}
+.popUp-layer-yjfk .yzm{ margin-left: 30px;}
+.popUp-layer-yjfk .error_tip{ margin: 10px 30px 0 30px;max-height: 25px;overflow: hidden;}
+.popUp-layer-yjfk .sub-btn{ padding: 20px 0 30px 88px; height: 40px;}
+.popUp-layer-yjfk .ui-btn{ margin: 0 12px;}
+.popUp-layer-yjfk .btn-blue{border: 2px solid #60ACE8;color: white;}
+.popUp-layer-yjfk .btn-blue:hover{border-color: #75BBF2;text-decoration: none;}
+.popUp-layer-yjfk .btn-whiteb{ border: 2px solid #64AEE9;color: #60ACE8;}
+.popUp-layer-yjfk .btn-whiteb:hover{ border-color: #d1ebff;text-decoration: none;}
+.popUp-layer-yjfk span{ position:absolute; color:red;margin: 5px 5px 0 18px;font-size: 18px;height: 38px; line-height: 38px;vertical-align: bottom;}
+.yzm{margin-top: 12px;}
+.sl-error p{font-size:12px;}
+.sl-error{height:16px;line-height:16px;}
+/**样式修改**/
+</style>
+
+<div class="gn_fixed">
+	<!--2018.3.30样式更新-->
+    <!--<a class="kefu"></a>
+	<div class="kefu_box">
+		<a class="xuni"></a>
+		<div class="tab_tips" style="display: none; left: -228px; width: 226px;">
+			<script src="/cms/out_include/ext/backTop_open.jspx"></script>
+        </div>	
+	</div>
+    <a class="totop" id="to_top"></a>-->
+    <div class="kefu_box">
+		<a class="xuni"></a>
+		<div class="tab_tips" style="display: none; left: -260px; width: 226px;">
+			<script src="./服务市场-恒生GTN_files/backTop_open.jspx"></script><script>
+/*打开网易七鱼*/
+
+	
+    </script>
+    <style>
+        /* 这一块是上线之后要去掉的 begin*/
+
+        /* 这一块是上线之后要去掉的 over*/
+    </style>
+<!--<script src="https://qiyukf.com/script/4faac744352a3591210261fa1f4ab18b.js?hidden=1"></script>-->
+   <a href="https://www.hs.net/doc/200505_200506.html">
+			 	<i class="contact-tel"></i>
+			 	<div class="text-wrapper">
+			 		<p class="title">咨询电话</p>
+			 		<p class="des orange">0571-26695555-7</p>
+			 	</div>
+			 </a>
+    		 <a href="https://cschat.antcloud.com.cn/index.htm?tntInstId=INDIMECN&amp;scene=SCE00004367" target="_blank">
+    		 	<i class="chat"></i>
+    		 	<div class="text-wrapper">
+    		 		<p class="title">在线客服</p>
+    		 		<p class="des">即时咨询，工作日 9：00~18：00</p>
+    		 	</div>
+    		 </a>
+    		 <a onclick="openPop()">
+    		 	<i class="contact"></i>
+    		 	<div class="text-wrapper">
+    		 		<p class="title">提交商机</p>
+    		 		<p class="des">这里可以反馈您的问题/建议/需求</p>
+    		 	</div>
+    		 </a>
+
+        </div>	
+	</div>
+	<a class="totop" id="to_top" onclick="backTop()" style="display: none;"></a>
+</div>
+<!--弹出层-->
+<!--<div class="popUp-layer popUp-layer-yjfk"  style="z-index: 1000;display:none;" >
+    <a class="close" title="关闭" onclick="ClosePop()">关闭</a>
+    <div class="popUp-layer-wrap">
+        <div class="popUp-layer-content">
+        	<form>
+        		<input type="hidden" name="ctgId" value="1"/>
+        		<input type="hidden" id="title" name="title" />
+        		<input type="reset" name="reset" style="display: none;" />
+	            <p class="title">意见反馈</p>
+	            <textarea name="content" id="content" placeholder="欢迎吐槽和建议"></textarea>
+	            <div id="contact_info_box" style="position: relative;">
+	            <span id="required">*</span><input type="text" name="phone" placeholder="邮箱或手机号，必填" id="contact_info"/>
+	            <div class="sl-error" style="display:none;"><p id="error_info">请输入有效的手机号码</p></div>
+	            </div>
+
+
+	            <div class="yzm" style="display:block;position:relative;">
+                    <input type="text" class="" id="imageCode_submit" placeholder="验证码" style="margin-left: 0;width:300px;">
+                    <img src="/cloud/open/imageCode/getImageCode.json" class="verifyImg" style="width:86px;height:36px;" id="changeImg">
+                    <a class="link-changeVerifyImg" href="javascript:change();" style="display:inline-block;position:absolute;top:4px;">
+                        <p style="width:50px;display:inline-block;">看不清</p><br>
+                        <p style="width:50px;display:inline-block;">换一张</p>
+                    </a>
+			  		<span class="validation" id="u8" style="left:250px;min-width:110px;margin-left:110px;"></span>	
+	            </div>
+
+	            <div class="error_tip">
+	            	<div class="red_tan" style="display: block;visibility: hidden;color:#ff7676">&nbsp;</div>
+	            </div>
+	            <div class="sub-btn">
+	                <a class="ui-btn btn-blue btn-radius" href="javascript:submit();">提交</a>
+	                <a class="ui-btn btn-whiteb btn-radius" onclick="ClosePop()">取消</a>
+	            </div>
+	    	</form>
+        </div>
+    </div>
+</div>-->
+<!--弹出层-->
+<!--新的弹出层 2018/08/28 add by wyy-->
+<style>
+.sjSubmit-modal{
+    background:#ffffff;
+    box-shadow:0 0 8px 0 rgba(0,0,0,0.50);
+    width:600px;
+    max-height:580px;
+    position: fixed;
+    top: 50%;
+    display: block;
+    margin-top: -290px;
+    left: 50%;
+    margin-left: -300px;
+    z-index: 1002;
+    display: none;
+}
+.modal-btn-wrapper{
+    width: 370px;
+    left: 50%;
+    margin-left: -185px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.modal-btn-wrapper a{
+    width:80px;
+    height:30px;
+    line-height: 30px;
+    font-size:12px;
+    text-align:center;
+    display: inline-block;
+}
+.modal-btn-wrapper .modal-btn-confirm{
+    background:#00aaee;
+    color:#ffffff;
+}
+.modal-btn-wrapper .modal-btn-cancel{
+    background:#f5f5f5;
+    border:1px solid #dddddd;
+    color:#333333;
+}
+.sjSubmit-modal-tile{
+   // width:100%;
+    height:49px;
+    border-bottom: 1px solid #dddddd;
+    padding:0 15px;
+}
+.sjSubmit-modal-tile  .modal-title{
+    float:left;
+    font-size:18px;
+    color:#444444;
+    text-align:left;
+    line-height: 50px;
+}
+.sjSubmit-modal-tile  .modal-close-icon{
+    height: 30px;
+    width: 30px;
+    background: url(/open/images/close.png) center center no-repeat;
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    cursor: pointer;
+}
+.modal-conten-wrapper{
+    padding:30px 0 20px 86px;
+    border-bottom: 1px solid #dddddd;
+}
+.modal-conten-wrapper .modal-textarea-item{
+    position: relative;
+}
+.modal-conten-wrapper .modal-textarea-item .modal-text-placeholder{
+    position: absolute;
+    top: 10px;
+    left: 150px;
+    font-size:12px;
+    color:#bbbbbb;
+    letter-spacing:0;
+    line-height:18px;
+}
+.modal-conten-wrapper .model-input-item{
+    margin-bottom: 18px;
+    position: relative;
+}
+.modal-conten-wrapper .model-input-item .model-label{
+    text-align: right;
+    width:98px;
+    font-size:12px;
+    color:#444444;
+    letter-spacing:0;
+    text-align:right;
+    line-height:12px;
+    display: inline-block;
+}
+.modal-conten-wrapper .model-input-item .model-label .model-item-required{
+    color: #e24a4a;
+}
+.modal-conten-wrapper .model-input-item .modal-input-error{
+    position: absolute;
+    left:134px;
+    font-size:12px;
+    color:#e24a4a;
+    letter-spacing:0;
+    line-height:12px;
+    display: none;
+}
+.modal-conten-wrapper .model-input-item input{
+    background:#ffffff;
+    border:1px solid #bbbbbb;
+    width:298px;
+    height:28px;
+    margin-left: 30px;
+    text-indent: 5px;
+}
+.modal-conten-wrapper .model-input-item .code-input-item{
+    width:188px;
+}
+.modal-conten-wrapper .model-input-item .code-get-btn{
+    font-size:12px;
+    color:#00aaee;
+    letter-spacing:0;
+    line-height:12px;
+    text-align:left;
+    margin-left: 10px;
+}
+.modal-conten-wrapper .model-input-item textarea{
+    background:#ffffff;
+    border:1px solid #bbbbbb;
+    width:298px;
+    height:148px;
+    margin-left: 30px;
+    resize: none;
+    vertical-align: top;
+    text-indent: 5px;
+}
+</style>
+<div class="sjSubmit-modal" id="sjSubmitModal" style="margin-top: -300px;">
+    <div class="sjSubmit-modal-tile">
+        <span class="modal-title">提交商机</span>
+        <span class="modal-close-icon" onclick="closePop()" avalonctrl="common"></span>
+    </div>
+    <div class="modal-conten-wrapper">
+        <div class="model-input-item">
+            <div class="model-label">
+                <span class="model-item-required">*</span>
+                <span>客户名称</span>
+            </div>
+            <input type="text" onblur="checkName(this)" id="sjSubmitName">
+            <div class="modal-input-error">xxxx</div>
+        </div>
+        <div class="model-input-item">
+            <div class="model-label">
+                <span>客户联系人</span>
+            </div>
+            <input type="text" maxlength="50" id="sjSubmitContact">
+            <div class="modal-input-error"></div>
+        </div>
+        <div class="model-input-item">
+            <div class="model-label">
+                <!--<span class="model-item-required">*</span>-->
+                <span>客户联系电话</span>
+            </div>
+            <input type="text" maxlength="50" id="sjSubmitTel">
+            <div class="modal-input-error"></div>
+        </div>
+        <div class="model-input-item modal-textarea-item">
+            <div class="model-label">
+                <span class="model-item-required">*</span>
+                <span>具体描述</span>
+            </div>
+            <textarea onblur="checkDescribe(this)" id="sjSubmitDes" onfocus="getfocus()"></textarea>
+            <div class="modal-input-error"></div>
+            <div class="modal-text-placeholder" onclick="getfocus(1)">
+                <p>请输入具体的商机描述，如涉及产品，使用场景等</p>
+                <p>~商机有奖推荐~</p>
+            </div>
+        </div>
+        <div class="model-input-item" id="sjPhoneItem">
+            <div class="model-label">
+                <span class="model-item-required">*</span>
+                <span> 商机提交人手机</span>
+            </div>
+            <input type="text" id="sjSubmitPhone" onblur="checkMobile(this)">
+            <div class="modal-input-error"></div>
+        </div>
+        <div class="model-input-item" id="sjCodeItem">
+            <div class="model-label">
+                <span class="model-item-required">*</span>
+                <span> 验证码</span>
+            </div>
+            <input type="text" class="code-input-item" id="sjSubmitCode" onblur="checkCode(this)">
+            <a class="code-get-btn" onclick="getCheckCode()">获取验证码</a>
+            <div class="modal-input-error"></div>
+        </div>
+    </div>
+    <div class="modal-btn-wrapper">
+        <a class="modal-btn-confirm" onclick="submit()">确定</a>
+        <a class="modal-btn-cancel" onclick="closePop()">取消</a>
+    </div>
+</div>
+
+<!--反馈弹窗begin-->
+<div class="confirm-pop-wrapper" id="sjSubmitSuccess">
+    <div class="confirm-pop-title clearfix">
+        <p class="cp-title">提交成功</p>
+        <a class="cp-close" onclick="closeConfirmPop()"></a>
+    </div>
+    <div class="confirm-pop-inner">
+        <!--<span class="tip-icon"></span>-->
+        <div class="confirm-content"></div>
+    </div>
+    <div class="bottom-btn-wrapper">
+        <a onclick="confirmSubmit()">确定</a>
+        <!--<a class="close" onclick="close('confirm-pop-wrapper')">取消</a>-->
+    </div>
+</div>
+<!--反馈弹窗end-->
+<div class="black_overlay"></div>
+
+<!--新的弹出层end-->	<!-- 底部cms引用模块 -->    
+   <script src="./服务市场-恒生GTN_files/footer_open.jspx"></script><!--底部footer,配置到cms上-->
+<style>
+.footer-wrapper .footer .fb-r .col ul li{
+      opacity: .5;
+}
+.footer-wrapper .footer .fb-r .col ul li:hover{
+      opacity: 1;
+}
+.footer-wrapper .footer .fb-r .col ul li a{
+   opacity: 1;
+}
+</style>
+<div class="footer-wrapper" style="background-color:#282a39;">
+    <div class="footer clearfix" style="background-color:#282a39;height:180px;">
+        <div class="fb-l">
+            <div class="img"></div>
+            <div class="col client">
+                <h4>客户服务</h4>
+                <ul>
+                    <!--<li>QQ：2920879652</li>-->
+                    <li>客服：0571-26695555-7</li>
+                    <li><a href="mailto:gtn@hundsun.com">Email : gtn@hundsun.com</a></li>
+                    <li>地址：杭州市滨江区江南大道3588号恒生大厦</li>
+                </ul>
+            </div>
+        </div>
+        <div class="fb-r clearfix">
+            <div class="col">
+                <h4>服务与支持</h4>
+                <ul>
+                    <li><a href="https://www.hs.net/GtnMarket.html" target="_blank">服务市场</a></li>
+                    <li><a href="https://www.hs.net/supportCM.html" target="_blank">新手指引</a></li>
+                    <li><a href="https://www.hs.net/doc/100200_200507.html" target="_blank">开发者指引</a></li>
+                    <li><a href="https://www.hs.net/api.html" target="_blank">API文档</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>热门产品</h4>
+                <ul>
+                    <li><a href="https://www.hs.net/service/363.html" target="_blank">晓鲸百问</a></li>
+                    <li><a href="https://www.hs.net/service/437.html" target="_blank">涨停分析</a></li>
+                    <li><a href="https://www.hs.net/service/235.html" target="_blank">小梵智讯</a></li>
+                    <li><a href="https://www.hs.net/service/322.html" target="_blank">量化因子库</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>合作与生态</h4>
+                <ul>
+                    <li><a href="https://gildata.hs.net/" target="_blank">聚源旗舰店</a></li>
+                    <li><a href="https://yunyong.hs.net/" target="_blank">云永旗舰店</a></li>
+                    <li><a href="https://ito.hs.net/greenChannel.html" target="_blank">我要合作</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>快速入口</h4>
+                <ul>
+                    <li><a href="https://www.hs.net/registration/regist.html" target="_blank">快速注册</a></li>
+                    <li><a href="https://www.hs.net/console/services.html" target="_blank">管理中心</a></li>
+                    <!--<li><a href="https://bbs.hscloud.cn/" target="_blank">开发者社区</a></li>-->
+                    <li><a href="http://www.hundsun.com/" target="_blank">恒生电子官网</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h4>关注GTN</h4>
+                <ul>
+                    <li style="opacity: .5;">微信公众号</li>
+                    <li class="qrcode"><a></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>©2018&nbsp;&nbsp;hs.net 版权所有 ICP经营许可证：浙B2-20180760</p>
+        <p class="beian">
+            <i class="img"></i>
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010802004704">浙公网安备 33010802004704号</a>
+        </p>
+    </div>
+</div>
+
+
+    
+	<!-- js引用模块 -->
+	<script src="./服务市场-恒生GTN_files/cloudMarketIndex.js.下载"></script>
+	<script src="./服务市场-恒生GTN_files/backTop.js.下载"></script>
+
+</body>
+<!--<script type="text/javascript" src="hotpace.js"></script>+-->
+</html>

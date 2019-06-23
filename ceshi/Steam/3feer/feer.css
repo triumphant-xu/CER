@@ -1,0 +1,121 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#0F2C58;
+}
+.logo{
+	height:100px;
+	background-color:#171A21;}
+.logo a{
+	color:#BBB9B7;
+	text-decoration:none;}
+.lo{
+	margin-left:200px;
+	margin-top:30px;}
+.nav1 nav{
+    float: left;
+	width:260px;
+	height:40px;
+	margin-left:400px;
+	margin-top:-35px;}
+.nav1 nav ul {
+	float:left;
+    margin: 0px;
+    padding: 0 0 0 0;
+	width:260px;
+	list-style:none;}
+.nav1 nav ul li {display: inline;}
+.nav1 nav ul li a{
+    float: left;
+    padding: 0px 8px; 
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color:#BBB9B7;  
+    font-family: "微软雅黑";
+    outline: none;}
+.nav1 nav li a:hover {color:#FFF;}
+.install{
+    position:absolute;
+	right:200px;
+	top:13px;
+	font-size:10px;
+	color:#BBB9B7;  
+    font-family: "微软雅黑";
+	height:20px;}
+.ins{margin-bottom:-6px;}
+.install a:hover{color:#FFF;}
+.main{height:1500px;}
+.navi{height:80px;}
+.navi nav{
+	background-color:#397298;
+	border:1px solid #171A21;
+    float: left;
+	width:930px;
+	height:36px;
+    padding: 0 ;
+	margin-left:200px;
+	margin-top:30px;}
+.navi nav ul {
+    float:left;
+    margin: 0px;
+    padding: 0 0 0 0;
+	width:930px;
+	height:35px;
+	list-style:none;}
+.navi nav ul li {
+    display: inline;}
+.navi nav ul li a{
+    float: left;
+	border-right:1px solid #333;
+    padding: 8px 20px; 
+    font-size: 13px;
+    text-align: center;
+    text-decoration: none;
+    color:#E1E1E1;  
+    font-family: "微软雅黑";
+    outline: none;}
+.navi nav li a:hover {
+	background-color:#D2D2D2;
+    color:#000;}
+.photos{background-image:url(../../img/thj.jpg);
+background-size:cover;}
+.GA{
+	margin-left:60px;
+	width:1500px;
+    height:500px;}
+.gi{
+	height:330px;
+     width:710px;}
+.gi1{height:91px;
+     width:680px;
+     margin-top:10px;
+	 background-color:#171A21;}
+.gi1-2{
+	margin-top:10px;
+	margin-right:100px;
+	float:right;
+	width:300px;
+	height:80px;
+	background-color:#171A21;}
+.gm{
+	margin-left:50px;
+	width:400px;
+    height:350px;}
+.l-1{
+	width:150px;
+	height:30px;
+	border-radius:3px;
+	text-align:center;
+	float:left;
+	font-size:13px;
+	font-family:"微软雅黑";
+	color:#66C0F4;
+	margin-left:5px;
+	margin-top:5px;
+	background-color:#2A475E;}
+.gi,.gm{float:left;}
+.l-1:hover{
+	color:#FFF;
+	background-image:linear-gradient(90deg,#67C1F5,#427C9D);}
+	
